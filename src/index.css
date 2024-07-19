@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Kalam:wght@300;400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+NL:wght@100..400&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html::-webkit-scrollbar {
+    display: none;
+  }
+  body {
+    @apply bg-[#11071F] text-white;
+  }
+}
+
+@layer utilities {
+  .bg-radial {
+    /* Gradient */
+    background: radial-gradient(
+      50% 50% at 50% 50%,
+      #763cac 0%,
+      rgba(50, 15, 133, 0) 100%
+    );
+  }
+  .bg-linear {
+    background: linear-gradient(
+      110.49deg,
+      #130428 19.95%,
+      #251043 67.64%,
+      #38126d 107.08%,
+      #261045 156.61%,
+      #190634 183.21%
+    );
+    box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+  }
+  .font-kalam {
+    font-family: "Kalam", cursive;
+  }
+  .font-playwrite {
+    font-family: "Playwrite NL", cursive;
+  }
+}
